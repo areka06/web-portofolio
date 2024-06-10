@@ -6,27 +6,29 @@ import Image from "next/image";
 export function HeroScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden w-full">
+      <a href="https://drive.google.com/file/d/1OvUVOPPYIU8R3uREaxKMjb1cjYOmSxDS/view?usp=drive_link">
       <ContainerScroll
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-black dark:text-white">
-              Unleash the power of <br />
+              Want to check my full portfolio? <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Scroll Animations
+              Click on the Animation Below
               </span>
             </h1>
           </>
         }
       >
         <Image
-          src={`https://sight-sphere.vercel.app/Aset/Frame1.svg`}
+          src={`/Portofolio.png`}
           alt="hero"
           height={720}
           width={1400}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          className="mx-auto rounded-2xl object-cover h-full"
           draggable={false}
         />
       </ContainerScroll>
+      </a>
     </div>
   );
 }
